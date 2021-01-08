@@ -1,0 +1,93 @@
+@import 'variables';
+@import 'generals';
+@import 'preloader';
+@import 'header';
+@import 'footer';
+@import 'back-to-top';
+@import 'media-screen';
+@import 'services';
+@import 'candidate-section';
+@import 'homepage';
+@import 'line-sections';
+@import 'contact';
+@import 'dodoupravy';
+@import 'datacruit';
+@import 'cookies_gdpr';
+
+
+.border-box{
+	box-sizing: border-box;
+}
+
+
+.p-red{
+	color:$color-menu-hover-active;
+	a{
+		color: $color-bacground-footer;
+		&:hover{
+			color: $color-bacground-footer;
+		}
+	}
+}
+.p-black{
+	color:black;
+}
+.brown-text{
+	color: $color-brown;
+}
+.candidate{	
+	background-color: $color-bacground-footer;
+}
+.client{	
+	background-color: $color-menu-hover-active;
+}
+.vw-text{
+	font-size: 1.5em;
+}
+
+.buttony-uvod{
+	padding: 1.5em 2.5em;
+	font-size: $font-size-home-section;
+	color: $color-text-footer;	
+	&:hover{
+		text-decoration: none;
+		color:$color-text-footer;
+	}
+}
+
+
+.hrefs a{
+	padding: 1em 0 1em 0;
+	text-decoration: none;
+	
+	&:hover{
+		p{
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+			color: $color-text-footer;
+		}
+		.arrow{
+			filter: brightness(0%) invert(1);
+			transform:translateX(30px);
+			transition: 0.3s;
+			-webkit-transition: 0.3s;
+			-moz-transition: 0.3s;
+			-ms-transition: 0.3s;
+			-o-transition: 0.3s;
+			-webkit-filter: brightness(0%) invert(1);
+		}
+	}
+	
+}
+.arrow{
+	height: 14px;
+}
+.img-fluid { align-self: flex-start; object-fit: contain; }
+
+h3 .linespace{
+	line-height: 1.2em;
+}
+
