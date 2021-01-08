@@ -1,0 +1,41 @@
+@charset "UTF-8";
+.ul-bodka ul li {
+  list-style: disc;
+  list-style-position: outside;
+}
+
+.card, .card-header {
+  border: none !important;
+  background-color: #ffffff !important;
+  -webkit-box-shadow: 0px 4px 19px -5px rgba(0, 0, 0, 0.63) !important;
+  -moz-box-shadow: 0px 4px 19px -5px rgba(0, 0, 0, 0.63) !important;
+  box-shadow: 0px 4px 19px -5px rgba(0, 0, 0, 0.63) !important;
+  /*zrusi ten zasrany outline na buttonoch*/
+}
+.card .btn:focus, .card-header .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.card .btn-block:after, .card-header .btn-block:after {
+  content: "−";
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  color: #b2b2b2;
+  text-align: center;
+  right: 15px;
+  top: 20px;
+  position: absolute;
+}
+.card .btn-block:after:hover, .card-header .btn-block:after:hover {
+  color: #d12b2b;
+}
+.card .btn-block.collapsed:after, .card-header .btn-block.collapsed:after {
+  content: "+";
+}
+.card h2, .card-header h2 {
+  color: #4c4c4c;
+}
+.card h2:hover, .card-header h2:hover {
+  color: #d12b2b;
+}

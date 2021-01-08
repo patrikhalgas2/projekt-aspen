@@ -1,0 +1,147 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+/*
+.button-top-right{
+
+	a{ 
+		font-size:15;
+		text-decoration: none;
+		color: $color-menu;
+	}
+}
+*/
+header {
+  position: absolute;
+  top: 0;
+  z-index: 9999999 !important;
+}
+
+.active {
+  text-decoration: none;
+  color: #d12b2b;
+}
+
+nav li .links {
+  text-decoration: underline;
+  color: #1c1c1c;
+}
+nav li a {
+  font-size: 14px;
+  color: #b2b2b2;
+  font-weight: 900 !important;
+}
+nav li a:hover,
+nav li a .active {
+  text-decoration: none;
+  color: #d12b2b;
+}
+
+.logo {
+  width: 192px;
+  padding-left: 22%;
+  padding-top: 6%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  right: 0;
+}
+
+.topnav #myLinks {
+  position: relative;
+  display: none;
+  left: 25px;
+}
+
+.topnav a {
+  color: #ffffff;
+  padding: 0px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  font-weight: 100;
+}
+
+.logo-center {
+  position: relative;
+  right: -38vw;
+  font-size: 100%;
+  height: 40px;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.special-nav-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.tlacidloo-jedna {
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  right: 151px;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: inset 0 3px 0 0 #b2b2b2;
+  cursor: pointer;
+  color: #b2b2b2;
+}
+
+.tlacidloo-jedna:hover {
+  box-shadow: inset 0 10px 0 0 #d12b2b;
+  transition: all 0.4s;
+  color: #d12b2b;
+  text-decoration: none;
+}
+
+.tlacidloo-dva:hover {
+  box-shadow: inset 0 10px 0 0 #000000;
+  transition: all 0.4s;
+  color: black;
+  text-decoration: none;
+}
+
+.tlacidloo-dva {
+  color: #b2b2b2;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: inset 0 3px 0 0 #b2b2b2;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 3px;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+}
+
+@media (max-width: 1200px) {
+  .tlacidloo-jedna, .tlacidloo-dva {
+    display: none !important;
+  }
+}
+.customScroll {
+  cursor: pointer;
+}

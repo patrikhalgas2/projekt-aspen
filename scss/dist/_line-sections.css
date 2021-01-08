@@ -1,0 +1,46 @@
+.main-sections-paragraph {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.3em 0.2em !important;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.main-sections {
+  position: relative;
+  width: 90%;
+  height: 44px;
+  margin: 20px 0 20px 0;
+}
+
+.red-line {
+  color: #d12b2b;
+  background: #d12b2b;
+}
+
+.black-line {
+  color: #1c1c1c;
+  background: #1c1c1c;
+}
+
+.brown-line {
+  color: #a97d59;
+  background: #a97d59;
+}
+
+.green-line {
+  color: #6b9243;
+  background: #6b9243;
+}
+
+.left {
+  position: relative;
+  left: 0;
+  margin-right: 0;
+}
+
+.right {
+  position: relative;
+  right: -10%;
+  margin-left: 0;
+}

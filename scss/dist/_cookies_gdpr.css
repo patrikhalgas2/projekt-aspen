@@ -1,0 +1,140 @@
+.cookies a {
+  font-size: 14px;
+  color: #b2b2b2;
+  color: #d12b2b;
+  font-weight: 900 !important;
+}
+.cookies a:hover {
+  text-decoration: none;
+  color: #b2b2b2;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
+.cookies-box {
+  position: fixed;
+  left: 0;
+  bottom: 0px;
+  z-index: 999999999;
+  background: #d12b2b;
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  width: 100%;
+  animation: 1.5s slideUp linear;
+}
+
+@media (max-width: 991px) {
+  .cookies-box {
+    animation: none !important;
+    bottom: 50px !important;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(80px);
+    -webkit-transform: translateY(80px);
+    -moz-transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+  }
+}
+.cookies-box-btn {
+  background: #ffffff;
+  margin-left: 10px;
+  color: #d12b2b;
+  font-weight: bold;
+  transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  border-radius: 5px;
+  padding: 5px 13px;
+  cursor: pointer;
+}
+
+.cookies-box-btn:hover {
+  text-decoration: none;
+  color: #d12b2b;
+  background: #ddd;
+}
+
+.gdpr:hover, .gdpr {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.box-divider {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+  height: 10px;
+  overflow: hidden;
+}
+
+.box-divider .box {
+  width: 10px;
+  height: 10px;
+  background: #b2b2b2;
+  margin-left: 70px;
+}
+
+table.cookielawinfo-classic {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  color: #333;
+}
+
+table {
+  margin: 0 0 20px;
+  padding: 0;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: #fff;
+  border-top: 1px solid #ececec;
+}
+
+th {
+  font-weight: bold;
+  padding: 20px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+thead tr th {
+  text-transform: uppercase;
+  background: #e2e2e2;
+}
+
+table.cookielawinfo-classic th {
+  border: 1px solid #ccc;
+  padding: 5px;
+  line-height: 1.8em;
+  font-size: 0.8em;
+  vertical-align: top;
+  width: 20%;
+}
+
+tr {
+  line-height: 35px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  font-size: 14px;
+}
