@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hidden{display:none!important;}
+    </style>
+</head>
+<body>
+
+<div id="open-positions-wrapper">
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+    $(document).ready( function() {
+
+        let itemsPerPage = 10;
+
+        async function getJobs(itemsToShow) {
+            let id;
+
+            let options = {
+                "method": "POST",
+                "Access-Control-Allow-Headers": "*",
+                "Access-Control-Allow-Origin": "*",
+                "cache": "no-cache",
+                "headers": {
+                    "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
+                },
+
+            }
+            await fetch( "getJobs.php", options )
+                .then( (data) => data.json() )
+                .then( (data) => {
+                    console.log(data)
+                    data.forEach( position => {
+
+                        if ($("<ul class=\"datacruit-open-positions-list\">").length > 0) {
+                            $("<ul class=\"datacruit-open-positions-list\">").remove()
+                        }
+
+                        let html = `<ul class="datacruit-open-positions-list">`;
+
+                        id = 0;
+
+                        data.forEach(position => {
+
+                            html += `
+                            <li id="${id++}" class="${(id > itemsToShow ? "to-hide hidden" : null)}">
+                                <a href="/position/?id=${position.id}" class="position">${position.title}</a>
+                            </li>`;
+
+                        });
+
+                        html += `</ul>`;
+
+                        $("#open-positions-wrapper").html(html);
+                    } )
+                    if( id > itemsPerPage )
+                        $(".showAll").removeClass("hidden")
+                } )
+                .catch( function(error){ return error } )
+        }
+
+        getJobs(itemsPerPage)
+
+        let jobInterval = setInterval( function(){getJobs(itemsPerPage)}, 3000 );
+
+        $("#open-positions-wrapper").after("<a href='' class='showAll hidden'>Show more</a>")
+
+        $( ".showAll" ).on("click", function(e) {
+            e.preventDefault()
+
+            if( jobInterval === null ) {
+                jobInterval = setInterval( function(){getJobs(itemsPerPage)}, 3000 );
+            } else {
+                clearInterval(jobInterval)
+                jobInterval = null
+            }
+
+            Object.values($("#open-positions-wrapper .to-hide")).forEach(li=>$(li).toggleClass("hidden"))
+        })
+
+    })
+
+</script>
+</body>
+</html>
