@@ -1,0 +1,163 @@
+@import 'variables';
+
+html, body {
+	scroll-behavior: smooth;
+}
+
+//header
+/*
+.button-top-right{
+	
+	a{ 
+		font-size:15;
+		text-decoration: none;
+		color: $color-menu;
+	}
+}
+*/
+
+
+header{
+	position: absolute;
+	top: 0;	
+	z-index: 9999999!important;
+}
+.active{ 
+	text-decoration: none;
+	color: $color-menu-hover-active;}
+
+nav li{
+
+		.links{
+			text-decoration: underline;
+			color: $color-bacground-footer;
+		}
+		
+		a{ 
+			font-size:$font-size-menu;
+			color: $color-menu;
+			font-weight: 900 !important;
+			
+
+			&:hover,
+			.active{ 
+			text-decoration: none;
+			color: $color-menu-hover-active;
+			}
+			
+		}
+}
+.logo{
+	width: 192px;
+	padding-left: 22%;
+	padding-top: 6%;
+}
+//mobile menu
+// Style the navigation menu 
+.topnav {
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	right: 0;
+  }
+  
+  // Hide the links inside the navigation menu (except for logo/home) 
+  .topnav #myLinks {
+	position: relative;
+	display: none;
+	left: 25px;
+}
+  
+  // Style navigation menu links 
+
+  .topnav a {
+	color: $color-text-footer;
+	padding: 0px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	display: block;
+	font-weight: 100;
+  }
+.logo-center{
+	position: relative;
+	right: -38vw;
+	font-size: 100%;
+	height: 40px;
+}
+  
+// Style the hamburger menu 
+  .topnav a.icon{
+	background: black;
+	display: block;
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+}
+
+  .special-nav-buttons {
+	 position: absolute;
+	  top:0;
+	  right:0;
+  }
+
+
+.tlacidloo-jedna {
+	position: absolute;
+	top: 0;
+	transition: all .4s;
+	right: 151px;
+	padding: 30px 0px 30px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 145px;
+	font-size:14px;
+	font-weight: bold;
+	box-shadow: inset 0 10px 0 0 $color-menu;
+	cursor:pointer;
+	color: $color-menu;
+}
+
+.tlacidloo-jedna:hover {
+	box-shadow: inset 0 20px 0 0 $color-menu-hover-active;
+	transition: all .4s;
+	color: $color-menu-hover-active;
+	text-decoration: none;
+}
+
+.tlacidloo-dva:hover {
+	box-shadow: inset 0 20px 0 0 #000000;
+	transition: all .4s;
+	color: black;
+	text-decoration: none;
+}
+
+.tlacidloo-dva {
+	color: $color-menu;
+	cursor:pointer;
+	transition: all .4s;
+	box-shadow: inset 0 10px 0 0 $color-menu;
+	font-size:14px;
+	font-weight: bold;
+	position: absolute;
+	top: 0;
+	right: 3px;
+	padding: 30px 0px 30px 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 145px;
+}
+
+@media (max-width:1200px) {
+	.tlacidloo-jedna, .tlacidloo-dva {
+		display: none!important;
+	}
+}
+
+.customScroll {
+	cursor: pointer;
+}

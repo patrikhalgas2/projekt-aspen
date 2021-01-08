@@ -1,0 +1,24 @@
+@import 'variables';
+
+//general
+body,
+html
+{
+	*,*:before,*:after {box-sizing: inherit;}
+	margin: 0;//zrusi margin
+	-webkit-font-smoothing:antialiased;//vyhladi stranku
+    
+    font: {
+		//family: 'Cairo', sans-serif;
+        family: 'Titillium Web', sans-serif;//font pisma na stranke
+        size: $font-size;
+        weight: $font-weight;}
+    }
+a{
+	text-decoration: none;//zrusi podciarknutia na a elementoch
+}
+li{
+	list-style: none; // toto zrusi tie bodky v zoznamoch ul
+	padding-left: 0; // ul elementy maju same od seba lavy padding, zrusime
+	margin: 0; //zrusi marginy
+}

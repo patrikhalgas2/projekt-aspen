@@ -1,0 +1,254 @@
+@import 'variables';
+
+
+.datacruit form input[type="submit"] {
+    background:$color-menu-hover-active;
+    background-color: $color-menu-hover-active;
+    color: $color-text-footer;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+.datacruit form .form-field {
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .datacruit form .form-field.required label::after {
+    content: " *";
+  }
+  
+  .datacruit form .form-field input, .datacruit form .form-field textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="date"], textarea, span.wpcf7-not-valid-tip, .woocommerce input#coupon_code, body[data-fancy-form-rcs="1"] .select2-container, body[data-fancy-form-rcs="1"] .select2-drop, body[data-fancy-form-rcs="1"] .select2-search, .select2-search input, body[data-form-style="minimal"] input[type="text"], body[data-form-style="minimal"] textarea, body[data-form-style="minimal"] input[type="email"], body[data-form-style="minimal"] .container-wrap .span_12.light input[type="email"], body[data-form-style="minimal"] input[type="password"], body[data-form-style="minimal"] input[type="tel"], body[data-form-style="minimal"] input[type="url"], body[data-form-style="minimal"] input[type="search"], body[data-form-style="minimal"] input[type="date"] {
+    font-size: 14px;
+  }
+  
+  input[type="text"], textarea, input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="date"], .material.woocommerce-page[data-form-style="default"] input#coupon_code {
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 4px;
+    border: 2px solid rgba(0,0,0,0);
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="url"], input[type="search"], input[type="date"], textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+    line-height: 24px;
+    color: #555;
+    background-color: #f1f1f1;
+    border: none;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  
+  body[data-button-style="slightly_rounded_shadow"] .nectar-button:hover, body[data-button-style="slightly_rounded_shadow"] .nectar-button:focus, body[data-button-style="slightly_rounded_shadow"].ascend .nectar-button.see-through:hover, body[data-button-style="slightly_rounded_shadow"] input[type="submit"]:hover, body[data-button-style="slightly_rounded_shadow"] input[type="submit"]:focus, body[data-button-style*="slightly_rounded"].single .heading-title[data-header-style="default_minimal"] .meta-category a:hover, body[data-button-style*="slightly_rounded"] #page-header-bg[data-post-hs="default_minimal"] .inner-wrap > a:hover, body[data-button-style="slightly_rounded_shadow"].woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover, body[data-button-style="slightly_rounded_shadow"] .swiper-slide .button a:hover, body[data-button-style="slightly_rounded_shadow"].ascend .nectar-button.see-through-2:hover, body[data-button-style="slightly_rounded_shadow"].ascend .nectar-button:hover, body[data-button-style="slightly_rounded_shadow"].woocommerce-page .woocommerce p.return-to-shop a.wc-backward:hover, body[data-button-style="slightly_rounded_shadow"] .sharing-default-minimal .nectar-love:hover, body[data-button-style="slightly_rounded_shadow"] .sharing-default-minimal .nectar-social-inner > a:hover, body[data-button-style="slightly_rounded_shadow"] .container-wrap input[type="submit"]:hover, body[data-button-style="slightly_rounded_shadow"] .container-wrap button[type="submit"]:hover, body[data-button-style="slightly_rounded_shadow"] .woocommerce-cart .wc-proceed-to-checkout a.checkout-button:hover {
+    box-shadow: 0 20px 38px$color-bacground-footer !important;
+    -ms-transform: translateY(-3px);
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+  }
+  
+  .datacruit form .form-field {
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+.datacruit .position .additional-info .infobox {
+    background:$color-menu-hover-active;
+    color: $color-text-footer;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .datacruit .position .additional-info > a {
+    display: block;
+    background: $color-text-footer;
+    border: 1px solid $color-menu;
+    color:$color-menu-hover-active;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .datacruit form {
+    padding: 20px 0;
+  }
+.datacruit .position {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .datacruit .position .detail {
+    flex-basis: 70%;
+    padding-right: 10px;
+  }
+  
+  .datacruit .position .detail ul {
+    padding-left:0;
+  }
+  
+  .datacruit .position .detail ul li:before {
+    content: "- ";
+  }
+  
+  .datacruit .position .additional-info {
+    flex-basis: 30%;
+    padding-left: 10px;
+  }
+  
+  @media (max-width:991px) {
+    .datacruit .position .detail {
+      flex-basis: 100%;
+      padding-right: 10px;
+    }
+  
+    .datacruit .position .additional-info {
+      flex-basis: 100%;
+      padding-left: 10px;
+    }
+  }
+
+.datacruit .position h2 {
+    padding: 20px 0;
+  }
+
+@media (min-width:991px) {
+    .open-positions {
+      margin-top:20px;
+      max-width:270px;
+    }
+  }
+
+.datacruit-open-positions-list {
+    padding-left: 0!important;
+    margin: 10% 0 0 0!important;
+  }
+  
+  ::marker {
+    text-align: end;
+    text-transform: none;
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+  }
+  
+  ul.datacruit-open-positions-list li {
+    list-style: none;
+  }
+  
+  ul.datacruit-open-positions-list li a {
+    display: block;
+    background: $color-text-footer;
+    border: 1px solid $color-menu;
+    transition: 0.5s border, 0.5s background, 0.5s color;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  ul.datacruit-open-positions-list li a:hover {
+    background:$color-menu-hover-active;
+    color: $color-text-footer;
+    border: 1px solid$color-menu-hover-active;
+  }
+
+  .datacruit .position h2 {
+    padding: 20px 0;
+  }
+  .datacruit .position {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .datacruit .position .detail {
+    flex-basis: 70%;
+    padding-right: 10px;
+  }
+  
+  .datacruit .position .detail ul {
+    padding-left:0;
+  }
+  
+  .datacruit .position .detail ul li:before {
+    content: "- ";
+  }
+  
+  .datacruit .position .additional-info {
+    flex-basis: 30%;
+    padding-left: 10px;
+  }
+  
+  @media (max-width:991px) {
+    .datacruit .position .detail {
+      flex-basis: 100%;
+      padding-right: 10px;
+    }
+  
+    .datacruit .position .additional-info {
+      flex-basis: 100%;
+      padding-left: 10px;
+    }
+  }
+  .datacruit .position .additional-info .infobox {
+    background: $color-menu-hover-active;
+    color: $color-text-footer;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .datacruit .position .additional-info > a {
+    display: block;
+    background: $color-text-footer;
+    border: 1px solid $color-menu;
+    color: $color-menu-hover-active;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .datacruit form {
+    padding: 20px 0;
+  }
+  
+  .datacruit form .form-field {
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  .datacruit form .form-field.required label::after {
+    content: " *";
+  }
+  
+  .datacruit form .form-field input, .datacruit form .form-field textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .datacruit form .form-field {
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+  .datacruit form input[type="submit"] {
+    background: $color-menu-hover-active;
+    background-color:$color-menu-hover-active;
+    color:$color-text-footer;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  

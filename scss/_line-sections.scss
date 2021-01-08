@@ -1,0 +1,49 @@
+@import 'variables';
+
+.main-sections-paragraph{
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0.6vw 0.2vw 0.5vw 0 !important;
+	font-size: 3vw;
+	color: $color-text-footer;	
+	letter-spacing: 0.3em;
+}
+
+
+
+.main-sections{
+	position: relative;
+	width: 90%;
+	min-height: 5vw;
+	margin: 20px 0 20px 0 ;
+}
+.red-line{
+	color: $color-menu-hover-active;
+	background: $color-menu-hover-active;
+}
+.black-line{
+	color: $color-bacground-footer;
+	background: $color-bacground-footer;
+}
+.brown-line{
+	color: $color-brown;
+	background: $color-brown;
+}
+
+.green-line{
+	color: $color-green;
+	background: $color-green;
+}
+
+
+.left{
+	position: relative;
+	left: 0;
+	margin-right: 0;
+
+}
+.right{
+	position: relative;
+	right: -10%;
+	margin-left: 0;
+}

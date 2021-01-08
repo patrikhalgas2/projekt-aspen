@@ -1,0 +1,61 @@
+@import 'variables';
+
+.ul-bodka{
+	ul li{
+		list-style:disc;
+		list-style-position:outside
+	}
+}
+
+button {
+	&.collapsed{
+		h2{
+			color: darken($color-menu,40%);	
+		}
+		
+	}
+}
+
+.card,.card-header{
+
+
+	border: none !important;
+	background-color: $color-text-footer !important;
+	-webkit-box-shadow: 0px 4px 19px -5px rgba(0,0,0,0.63) !important;
+	-moz-box-shadow: 0px 4px 19px -5px rgba(0,0,0,0.63) !important;
+	box-shadow: 0px 4px 19px -5px rgba(0,0,0,0.63) !important;
+	
+	/*zrusi ten zasrany outline na buttonoch*/
+	.btn:focus {
+		outline: none;
+		box-shadow: none;
+	  }
+
+	.btn-block:after{
+		content: '\002B';/*plusko*/
+		width: 35px;
+		height: 35px;
+		font-size: 30px;
+		color: $color-menu-hover-active;
+		text-align: center;
+		right: 15px;
+		top: 20px;
+		position: absolute;
+		&:hover{
+			color:$color-menu;
+		}
+	}
+
+	.btn-block.collapsed:after{
+		content: '\2212';/*minusko*/
+		color:$color-menu;
+	}
+	h2 {
+		color:$color-menu-hover-active;
+		&:hover{
+			color:$color-menu-hover-active;
+		}
+	}
+}
+
+

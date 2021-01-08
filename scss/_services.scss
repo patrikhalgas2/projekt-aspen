@@ -1,0 +1,14 @@
+@import 'variables';
+
+.services-points{
+	font-size: 0.8em;
+	font-weight: normal;
+	color: darken($color-menu,20%);
+}
+
+.hover-content {
+	display: none;
+}
+.red-square{
+	color:$color-menu-hover-active;
+}
